@@ -1,24 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <p style={{ fontSize: '28px' }}>1/10でemoji🎉が表示されます</p>
+      {Math.random() < 0.1 && <p style={{ fontSize: '6rem' }}>🎉</p>}
     </div>
   );
 }
